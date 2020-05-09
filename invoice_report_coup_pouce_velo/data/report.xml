@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data  noupdate="1">
+        <report
+            id="report_invoice_coup_pouce_velo"
+            string="Invoice coup pouce velo"
+            model="account.invoice"
+            report_type="qweb-pdf"
+            menu="True"
+            name="invoice_report_coup_pouce_velo.report_invoice_coup_pouce_velo"
+            attachment="(object.state in ('open','in_payment','paid')) and ('INV'+(object.number or '').replace('/','')+'coup_de_pouce_velo'+'.pdf')"
+            print_report_name="(object._get_report_base_filename())"
+            groups="account.group_account_invoice"
+        />
+    </data>
+</odoo>

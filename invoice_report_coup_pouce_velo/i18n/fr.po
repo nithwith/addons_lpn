@@ -1,0 +1,164 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* invoice_report_coup_pouce_velo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-09 13:40+0000\n"
+"PO-Revision-Date: 2020-05-09 13:40+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "&amp;nbsp;<span>on</span>"
+msgstr "&amp;nbsp;<span>sur</span>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<span groups=\"account.group_show_line_subtotals_tax_excluded\">Amount</span>\n"
+"                                    <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr "<span groups=\"account.group_show_line_subtotals_tax_excluded\">Montant</span>\n"
+"                                    <span groups=\"account.group_show_line_subtotals_tax_included\">Prix Total</span>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<span>Description</span>"
+msgstr ""
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<span>Disc.(%)</span>"
+msgstr "<span>Rem.(%)</span>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<span>Entretien vélo dans le cadre du Coup de pouce Vélo - Réparation</span>"
+msgstr ""
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<span>Quantity</span>"
+msgstr "<span>Quantité</span>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<span>Source Document</span>"
+msgstr "<span>Document Source</span>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<span>Taxes</span>"
+msgstr ""
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<span>Unit Price</span>"
+msgstr "<span>Prix Unitaire</span>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Sous-total</strong>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong class=\"text-center\">Scan me with your banking app.</strong><br/><br/>"
+msgstr "<strong class=\"text-center\">Scannez-moi avec votre application bancaire.</strong><br/><br/>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong class=\"text-center\">The SEPA QR Code informations are not set correctly.</strong><br/>"
+msgstr "<strong class=\"text-center\">Les informations du QR Code SEPA ne sont pas correctement définies.</strong><br/>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong>Customer Code:</strong>"
+msgstr "<strong>Numéro de client :</strong>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong>Description:</strong>"
+msgstr "<strong>Description :</strong>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong>Due Date:</strong>"
+msgstr "<strong>Date d'échéance :</strong>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong>Invoice Date:</strong>"
+msgstr "<strong>Date de la facture :</strong>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong>Reference:</strong>"
+msgstr "<strong>Référence :</strong>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong>Source:</strong>"
+msgstr "<strong>Origine :</strong>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Sous-total</strong>"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "Cancelled Invoice"
+msgstr "Facture annulée"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "Credit Note"
+msgstr "Avoir"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "Draft Invoice"
+msgstr "Facture en brouillon"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: invoice_report_coup_pouce_velo
+#: model:ir.actions.report,name:invoice_report_coup_pouce_velo.report_invoice_coup_pouce_velo
+msgid "Invoice coup pouce velo"
+msgstr "Facture coup pouce velo"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "Please use the following communication for your payment :"
+msgstr "Merci d'utiliser la communication suivante pour votre paiement:"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.external_layout_siret
+msgid "SIRET:"
+msgstr ""
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "Vendor Bill"
+msgstr "Facture fournisseur"
+
+#. module: invoice_report_coup_pouce_velo
+#: model_terms:ir.ui.view,arch_db:invoice_report_coup_pouce_velo.report_invoice_document_coup_pouce_velo
+msgid "Vendor Credit Note"
+msgstr "Avoir de fournisseur"
+
