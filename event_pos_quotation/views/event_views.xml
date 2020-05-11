@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_calendar_event_form_order" model="ir.ui.view">
+            <field name="name">calendar.event.calendar.form.order</field>
+            <field name="model">calendar.event</field>
+            <field name="priority" eval="2"/>
+            <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+            <field name="arch" type="xml">
+                    <xpath expr="//label[@for='description']" position="before">
+                        <group>
+                            <field name="order_id"/>
+                        </group>
+                    </xpath>
+            </field>
+        </record>
+  </data>
+</odoo>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_calendar_event_calendar_stage" model="ir.ui.view">
+            <field name="name">calendar.event.calendar</field>
+            <field name="model">calendar.event</field>
+            <field name="priority" eval="2"/>
+            <field name="inherit_id" ref="calendar.view_calendar_event_calendar"/>
+            <field name="arch" type="xml">
+                    <xpath expr="//calendar" position="attributes">
+                        <attribute name="color">stage_id</attribute>
+                    </xpath>
+            </field>
+        </record>
+
+        <record id="view_calendar_event_form_popup_stage" model="ir.ui.view">
+            <field name="name">calendar.event.calendar</field>
+            <field name="model">calendar.event</field>
+            <field name="priority" eval="2"/>
+            <field name="inherit_id" ref="calendar.view_calendar_event_form_popup"/>
+            <field name="arch" type="xml">
+                    <xpath expr="//form/group" position="before">
+                        <header>
+                            <field name="stage_id" widget="statusbar" options="{'clickable': '1'}"/>
+                        </header>
+                    </xpath>
+            </field>
+        </record>
+
+        <record id="view_calendar_event_form_stage" model="ir.ui.view">
+            <field name="name">calendar.event.calendar</field>
+            <field name="model">calendar.event</field>
+            <field name="priority" eval="2"/>
+            <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+            <field name="arch" type="xml">
+                    <xpath expr="//form/sheet" position="before">
+                        <header>
+                            <field name="stage_id" widget="statusbar" options="{'clickable': '1'}"/>
+                        </header>
+                    </xpath>
+            </field>
+        </record>
+
+        <!-- Calendar event stage -->
+
+        <record id="view_calendar_event_stage_form" model="ir.ui.view">
+            <field name="name">calendar.event.calendar</field>
+            <field name="model">calendar.event.stage</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="color"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_event_stage" model="ir.actions.act_window">
+            <field name="name">Event stage</field>
+            <field name="res_model">calendar.event.stage</field>
+            <field name="view_type">form</field>
+        </record>
+
+        <menuitem id="menu_calendar_event_stage"
+            parent="calendar.menu_calendar_configuration"
+            action="action_event_stage"/>
+  </data>
+</odoo>
