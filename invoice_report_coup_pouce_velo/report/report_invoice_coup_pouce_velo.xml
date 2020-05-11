@@ -19,6 +19,10 @@
                     <div t-if="o.partner_id.vat" class="mt16"><t t-esc="o.company_id.country_id.vat_label or 'Tax ID'"/>: <span t-field="o.partner_id.vat"/></div>
                 </t>
             </xpath>
+
+            <xpath expr="//i[hasclass('oe_payment_label')]" position="after">
+                <i class="oe_form_field text-right oe_payment_label">with <t t-esc="payment_vals['journal_name']"/></i>
+            </xpath>
         </template>
 
         <template id="report_invoice_coup_pouce_velo">
