@@ -7,9 +7,14 @@
             <field name="priority" eval="2"/>
             <field name="inherit_id" ref="calendar.view_calendar_event_calendar"/>
             <field name="arch" type="xml">
-                    <xpath expr="//calendar" position="attributes">
-                        <attribute name="color">stage_id</attribute>
-                    </xpath>
+                <calendar position="attributes">
+                    <attribute name="color">stage_id</attribute>
+                    <attribute name="readonly_form_view_id"></attribute>
+                    <attribute name="event_open_popup"></attribute>
+                </calendar>
+                <calendar position="inside">
+                    <field name="stage_color" invisible="1"/>
+                </calendar>
             </field>
         </record>
 
@@ -43,6 +48,17 @@
 
         <!-- Calendar event stage -->
 
+        <record id="view_calendar_event_stage_tree" model="ir.ui.view">
+            <field name="name">calendar.event.calendar</field>
+            <field name="model">calendar.event.stage</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="color" widget="color"/>
+                </tree>
+            </field>
+        </record>
+
         <record id="view_calendar_event_stage_form" model="ir.ui.view">
             <field name="name">calendar.event.calendar</field>
             <field name="model">calendar.event.stage</field>
@@ -51,7 +67,7 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <field name="color"/>
+                            <field name="color" widget="color"/>
                         </group>
                     </sheet>
                 </form>
@@ -62,6 +78,7 @@
             <field name="name">Event stage</field>
             <field name="res_model">calendar.event.stage</field>
             <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
         </record>
 
         <menuitem id="menu_calendar_event_stage"

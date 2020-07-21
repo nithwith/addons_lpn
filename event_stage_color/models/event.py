@@ -7,15 +7,14 @@ class EventStage(models.Model):
     _description = 'Event Stage'
 
     name = fields.Char(string='Stage Name', required=True, translate=True)
-    color = fields.Integer('Color Index')
+    color = fields.Char('Color Index', required=True)
 
 class Event(models.Model):
     _inherit = 'calendar.event'
 
+
     def _default_stage(self):
         return self.env['calendar.event.stage'].search([], limit=1).id
 
-    stage_id = fields.Many2one('calendar.event.stage',
-                               string='Stage',
-                               track_visibility='onchange',
-                               default=_default_stage)
+    stage_id = fields.Many2one('calendar.event.stage', string='Stage', track_visibility='onchange', default=_default_stage)
+    stage_color = fields.Char('Color Index', related='stage_id.color')

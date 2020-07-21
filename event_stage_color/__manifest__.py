@@ -9,7 +9,7 @@
     'category': 'Technical',
     'depends': ['base',
                 'calendar',
-                # 'web_widget_color'
+                'web_widget_color'
                 ],
     'data': [
         'views/template.xml',
