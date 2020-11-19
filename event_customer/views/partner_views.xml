@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_res_partner_form_lpn" model="ir.ui.view">
+            <field name="name">res.partner.form.lpn</field>
+            <field name="model">res.partner</field>
+            <field name="priority" eval="2"/>
+            <field name="inherit_id" ref="crm.view_partners_form_crm1"/>
+            <field name="arch" type="xml">
+                <button name="schedule_meeting" position="replace">
+                    <button class="oe_stat_button"
+                            type="object"
+                            icon="fa-calendar-check-o"
+                            context="{'search_default_customer_id': active_id,'default_customer_id': active_id}"
+                            name="open_meetings"
+                            attrs="{'invisible': [('meetings_customer_count','=', 0)]}">
+                        <field string="Meetings" name="meetings_customer_count" widget="statinfo"/>
+                    </button>
+                </button>
+            </field>
+        </record>
+  </data>
+</odoo>
