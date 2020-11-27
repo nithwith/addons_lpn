@@ -12,8 +12,7 @@
                             type="object"
                             icon="fa-calendar-check-o"
                             context="{'search_default_customer_id': active_id,'default_customer_id': active_id}"
-                            name="open_meetings"
-                            attrs="{'invisible': [('meetings_customer_count','=', 0)]}">
+                            name="open_meetings">
                         <field string="Meetings" name="meetings_customer_count" widget="statinfo"/>
                     </button>
                 </button>

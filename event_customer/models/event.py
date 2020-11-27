@@ -11,5 +11,5 @@ class Event(models.Model):
     customer_email = fields.Char('Customer Email', related='customer_id.email', readonly=True)
     customer_phone = fields.Char('Customer phone', related='customer_id.phone', readonly=True)
     #Sale
-    quotation_id = fields.Many2one('pos.quotation', string='Quotation')
-    sale_order_id = fields.Many2one('sale.order', string='Sale order')
+    quotation_id = fields.Many2one('pos.quotation', string='Quotation', track_visibility='onchange')
+    sale_order_id = fields.Many2one('sale.order', string='Sale order', track_visibility='onchange')
