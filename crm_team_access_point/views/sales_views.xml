@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="crm.crm_menu_root"
+              action="sales_team.crm_team_salesteams_act"/>
+
+    <menuitem id="crm.sales_team_menu_team_pipeline"
+            name="Team Pipelines"
+            parent="crm.crm_menu_sales"
+            groups="sales_team.group_sale_salesman_all_leads,sales_team.group_sale_manager"
+            action="sales_team.crm_team_salesteams_act"
+            sequence="4"/>
+</odoo>
