@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+{
+    'name': "Event customer",
+    'version': '12.0.1.0.0',
+    'summary': """This Module add customer infos on events""",
+    'description': """This Module add customer infos on events""",
+    'author': "Theo MARTY",
+    'company': 'Theo MARTY',
+    'website': "https://www.theomarty.fr",
+    'category': 'Technical',
+    'depends': ['base',
+                'calendar',
+                'crm',
+                'pos_quotation_order'],
+    'data': [
+        'views/event_views.xml',
+        'views/partner_views.xml',
+        'security/ir.model.access.csv',
+        'security/calendar_security.xml',
+    ],
+    'license': 'LGPL-3',
+    'installable': True,
+    'auto_install': False,
+    'application': False,
+}

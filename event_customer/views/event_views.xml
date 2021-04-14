@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_calendar_event_form_lpn" model="ir.ui.view">
+            <field name="name">calendar.event.calendar.form.lpn</field>
+            <field name="model">calendar.event</field>
+            <field name="priority" eval="2"/>
+            <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('oe_title')]" position="replace">
+                    <div class="row">
+                         <div class="col-6">
+                             <div class="oe_edit_only">
+                                <label for="name"/>
+                            </div>
+                            <h1>
+                                <field name="name" placeholder="e.g. Business Lunch"/>
+                            </h1>
+                         </div>
+                         <div class="col-4">
+                             <div class="oe_edit_only">
+                                <label for="customer_id"/>
+                            </div>
+                            <h1>
+                                <field name="customer_id"/>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-6">
+                            <label for="partner_ids" string="Attendees" class="oe_edit_only"/>
+                            <h2>
+                                <field name="partner_ids" widget="many2manyattendee"
+                                    placeholder="Select attendees..."
+                                    context="{'force_email':True}"
+                                    class="oe_inline"/>
+                            </h2>
+                         </div>
+                        <div class="col-6">
+                            <group>
+                                <field name="customer_phone" widget="phone" attrs="{'invisible' : [('customer_phone', '=', False)]}"/>
+                                <field name="customer_email" widget="email" attrs="{'invisible' : [('customer_email', '=', False)]}"/>
+                            </group>
+                        </div>
+                    </div>
+                </xpath>
+                <xpath expr="//label[@for='description']" position="before">
+                    <group string="Sales">
+                        <group>
+                            <field name="quotation_id"/>
+                        </group>
+                        <group>
+                            <field name="sale_order_id"/>
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_calendar_event_lpn" model="ir.ui.view">
+            <field name="name">calendar.event.calendar.lpn</field>
+            <field name="model">calendar.event</field>
+            <field name="priority" eval="2"/>
+            <field name="inherit_id" ref="calendar.view_calendar_event_calendar"/>
+            <field name="arch" type="xml">
+                <field name="partner_ids" position="replace">
+                    <field name="customer_id"/>
+                </field>
+            </field>
+        </record>
+
+
+        <record id="view_calendar_event_search_lpn" model="ir.ui.view">
+            <field name="name">calendar.event.calendar.search.lpn</field>
+            <field name="model">calendar.event</field>
+            <field name="priority" eval="2"/>
+            <field name="inherit_id" ref="calendar.view_calendar_event_search"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="customer_id"/>
+                </field>
+                <filter name="privacy" position="after">
+                        <filter string="Customer" name="group_customer" domain="[]" context="{'group_by':'customer_id'}"/>
+                </filter>
+            </field>
+        </record>
+  </data>
+</odoo>

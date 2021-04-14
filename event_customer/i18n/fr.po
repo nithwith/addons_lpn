@@ -1,0 +1,89 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* event_customer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-19 20:18+0000\n"
+"PO-Revision-Date: 2020-11-19 20:18+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: event_customer
+#: model_terms:ir.ui.view,arch_db:event_customer.view_calendar_event_form_lpn
+msgid "Attendees"
+msgstr "Participants"
+
+#. module: event_customer
+#: model:ir.model,name:event_customer.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: event_customer
+#: model:ir.model.fields,field_description:event_customer.field_calendar_event__customer_id
+#: model_terms:ir.ui.view,arch_db:event_customer.view_calendar_event_search_lpn
+msgid "Customer"
+msgstr "Client"
+
+#. module: event_customer
+#: model:ir.model.fields,field_description:event_customer.field_calendar_event__customer_email
+msgid "Customer Email"
+msgstr "Email"
+
+#. module: event_customer
+#: model:ir.model.fields,field_description:event_customer.field_calendar_event__customer_phone
+msgid "Customer phone"
+msgstr "Tel"
+
+#. module: event_customer
+#: model:ir.model,name:event_customer.model_calendar_event
+msgid "Event"
+msgstr "Évènement"
+
+#. module: event_customer
+#: model:ir.model.fields,field_description:event_customer.field_res_partner__meetings_customer_count
+#: model:ir.model.fields,field_description:event_customer.field_res_users__meetings_customer_count
+msgid "Events"
+msgstr "Rendez-vous"
+
+#. module: event_customer
+#: model_terms:ir.ui.view,arch_db:event_customer.view_res_partner_form_lpn
+msgid "Meetings"
+msgstr "Rendez-vous"
+
+#. module: event_customer
+#: model:ir.model.fields,help:event_customer.field_res_partner__meetings_customer_count
+#: model:ir.model.fields,help:event_customer.field_res_users__meetings_customer_count
+msgid "Number of events the partner is customer."
+msgstr "Nombre de rdv de ce contact"
+
+#. module: event_customer
+#: model:ir.model.fields,field_description:event_customer.field_calendar_event__quotation_id
+msgid "Quotation"
+msgstr "Devis POS"
+
+#. module: event_customer
+#: model:ir.model.fields,field_description:event_customer.field_calendar_event__sale_order_id
+msgid "Sale order"
+msgstr "Devis"
+
+#. module: event_customer
+#: model_terms:ir.ui.view,arch_db:event_customer.view_calendar_event_form_lpn
+msgid "Sales"
+msgstr "Ventes"
+
+#. module: event_customer
+#: model_terms:ir.ui.view,arch_db:event_customer.view_calendar_event_form_lpn
+msgid "Select attendees..."
+msgstr "Selectionnez les participants..."
+
+#. module: event_customer
+#: model_terms:ir.ui.view,arch_db:event_customer.view_calendar_event_form_lpn
+msgid "e.g. Business Lunch"
+msgstr "ex: Repas de travail"
