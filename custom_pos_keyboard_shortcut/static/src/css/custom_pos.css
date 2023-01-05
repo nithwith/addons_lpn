@@ -1,0 +1,46 @@
+.pos .leftpane{
+    width: 500px;
+}
+
+.pos .middlepane{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    /* box-sizing: border-box; */
+    position: absolute;
+    left: 500px;
+    width: 440px;
+    top: 0;
+    bottom: 0;
+     border-right: solid 1px #CECBCB;
+     /*border-right: solid 2px #787878;*/
+    background: #e2e2e2;
+}
+
+.pos .rightpane{
+    left: 940px;
+}
+
+div.product-screen div.rightpane div.searchbox{
+    width: 100%;
+}
+
+div.product-screen div.rightpane div.searchbox input{
+    width: 90% !important;
+}
+
+table.shortcut-tips-table{
+    width: 100%;
+}
+
+table.shortcut-tips-table th{
+    background-color: #cfcfcf;
+}
+
+table.shortcut-tips-table th,td{
+    height: 30px;
+    text-align: left;
+    padding: 6px 12px;
+    border-bottom: 1px solid #dddddd;
+}
+
